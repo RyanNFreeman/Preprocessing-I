@@ -53,12 +53,119 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html {
+	height: 100%;
+	font-size: 62.5%
 }
 
-@red2: rgb(189, 156, 156);
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-body h1 {
-	color: @red2;
+p {
+	font-size: 1.5rem;
+	padding: 15px;
+	width: 100%;
+	line-height: 1.5;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+h1, h2, h3 {
+	font-size: 2.5rem;
+	padding: 5px 30px;
+	line-height: 1.5;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	width: 100%;
+  }
+
+nav {
+	width: 100%;
+	
+	ul {
+		display: flex;
+		justify-content: flex-end;
+	
+		li {
+			padding: 20px;
+		
+			a {
+				color: black;
+				text-decoration: none;
+				font-size: 2rem;
+			}
+			a:hover {
+				color: gray;
+				text-decoration: underline;
+				font-size: 2rem;
+			}
+		}
+	
+	}
+
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	background-color: rgb(243, 235, 235);
+
+	img {
+		width: 140px;
+		height: 200px;
+		padding: 5px;
+		border-radius: 12px;
+	}
+}
+
+.middle-content {
+	flex-direction: column;
+	width: 100%;
+	padding-bottom: 20px;
+
+	p {
+		padding: 15px 40px;
+	}
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+	background-color: rgb(243, 235, 235);
+	
+	.volunteer-work {
+		width: 40%;
+
+		p {
+			padding: 0 40px 20px 40px;
+		}
+	}
+	.skills-licenses {
+		width: 40%;
+		
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+		
+			li {
+				width: 50%;
+				font-size: 1.5rem;
+			}
+		}	
+	}
 }
