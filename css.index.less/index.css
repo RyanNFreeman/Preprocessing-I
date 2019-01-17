@@ -167,8 +167,7 @@ nav img {
   display: block;
   width: 30%;
   height: 30%;
-  margin: 0 auto;
-  border-radius: 40%;
+  margin: 10px auto;
 }
 @media (min-width: 500px) {
   nav img {
